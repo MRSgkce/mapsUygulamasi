@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		44A51AC52CC98DA000DD3B35 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A51AC42CC98DA000DD3B35 /* CoreLocation.framework */; };
+		44A51AC72CC9910700DD3B35 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A51AC62CC9910700DD3B35 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		44A51AA82CC98CDC00DD3B35 /* mapsUygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapsUygulamasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A51AC42CC98DA000DD3B35 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		44A51AC62CC9910700DD3B35 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A51AC72CC9910700DD3B35 /* MapKit.framework in Frameworks */,
+				44A51AC52CC98DA000DD3B35 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				44A51AAA2CC98CDC00DD3B35 /* mapsUygulamasi */,
+				44A51AC32CC98DA000DD3B35 /* Frameworks */,
 				44A51AA92CC98CDC00DD3B35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +66,15 @@
 				44A51AA82CC98CDC00DD3B35 /* mapsUygulamasi.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		44A51AC32CC98DA000DD3B35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44A51AC62CC9910700DD3B35 /* MapKit.framework */,
+				44A51AC42CC98DA000DD3B35 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +167,7 @@
 				DEVELOPMENT_TEAM = 67J998R3LN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mapsUygulamasi/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Konum izni";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -176,6 +196,7 @@
 				DEVELOPMENT_TEAM = 67J998R3LN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = mapsUygulamasi/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Konum izni";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
